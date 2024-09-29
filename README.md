@@ -15,7 +15,7 @@ You should be able to use either of the first two options any time during the ex
 - Resizing the window should keep the boundary and objects in the lower left corner of the new window and allow you to redefine either the boundary or the object in the new window (this can be done easily with correct calls to gluOrtho2D and glViewport)
 - Pressing 't' or 'r' should toggle the translation or rotation of the object on and off.  Pressing’q’should exit the program.
 - Pressing the up arrow and down arrow should effect the speed of translation.  Pressing the right and left arrow keys should effect the speed of rotation.
-- Your  code  should  make  use  of  the  OpenGL  transformation  methods __glTranslatef__and _glRotatef_ to move the object.
+- Your  code  should  make  use  of  the  OpenGL  transformation  methods _glTranslatef_ and _glRotatef_ to move the object.
 - While you can rely on glTranslatef and glRotatef to move object correctly, you will need to determine the locations of the transformed vertices in order to determine when they hit or go beyond the boundary. For this, you need access to the transformation matrix, so you can perform the matrix-vertex multiplication by hand. OpenGL has a generic method to obtain a variety of information about the current state, including the transformation matrix.  The call to get this is
 
   double matrix[16];
