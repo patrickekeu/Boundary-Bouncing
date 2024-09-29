@@ -19,7 +19,10 @@ You should be able to use either of the first two options any time during the ex
 - While you can rely on glTranslatef and glRotatef to move object correctly, you will need to determine the locations of the transformed vertices in order to determine when they hit or go beyond the boundary. For this, you need access to the transformation matrix, so you can perform the matrix-vertex multiplication by hand. OpenGL has a generic method to obtain a variety of information about the current state, including the transformation matrix.  The call to get this is
 
   double matrix[16];
+  
   ...
+  
   glGetDoublev(GL_MODELVIEW_MATRIX, matrix);
+
   After this call, matrix will store the 16 values in the 4×4 transformation matrix in column-major order.
 
